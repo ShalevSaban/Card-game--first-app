@@ -1,20 +1,19 @@
   package com.example.myfirstapp;
 
-import androidx.appcompat.app.AppCompatActivity;
+  import android.content.Intent;
+  import android.os.Bundle;
+  import android.util.Log;
+  import android.view.View;
+  import android.widget.ImageView;
+  import android.widget.TextView;
+  import android.widget.Toast;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
+  import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
+  import java.util.Arrays;
+  import java.util.Collections;
+  import java.util.List;
+  import java.util.Random;
 
   public class MainActivity extends AppCompatActivity {
       enum Shape{club,diamond,spade,heart;}
@@ -43,7 +42,7 @@ TextView  scoreLeft,scoreRight;
 
                  public void onClick(View v) {
                      Log.d("situations","checkClick");
-                     int leftCardNum,colorLeft,colorRight,shapeLeft,shapeRight,rightCardNum,leftImage,rightImage;
+                     int leftCardNum,shapeLeft,shapeRight,rightCardNum,leftImage,rightImage;
                       rightCardNum= random.nextInt(13)+1;
                       leftCardNum= random.nextInt(13)+1;
                      if (leftCardNum>rightCardNum){
