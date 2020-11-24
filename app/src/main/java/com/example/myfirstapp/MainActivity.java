@@ -16,7 +16,7 @@
   import java.util.Random;
 
   public class MainActivity extends AppCompatActivity {
-      enum Shape{club,diamond,spade,heart;}
+      enum Shape{club,diamond,spade,heart}
       private static final List<Shape> shapes =
               Collections.unmodifiableList(Arrays.asList(Shape.values()));
       private static final int SHAPES_SIZE = shapes.size();
