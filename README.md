@@ -1,4 +1,4 @@
-# MyFirstApp
+# Card War Game
 Welcome to card war game.
 Every time that you push the play button 2 cards are drawn(randomly) from the deck,The player with the highest value card gets a point.
 In the case of two cards with the same value a declaration of war is declared.
