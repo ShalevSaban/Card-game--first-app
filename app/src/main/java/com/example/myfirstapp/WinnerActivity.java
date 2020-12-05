@@ -14,11 +14,11 @@ public class WinnerActivity extends AppCompatActivity {
         ImageView winnerPicture=findViewById(R.id.winner_IMG_picture);
 
         String WinnerName=getIntent().getStringExtra("nameOfWinner");
-        if( WinnerName.equals("man")){
-       winnerPicture.setImageResource(R.drawable.man);
-        }
+        if( WinnerName.equals("man"))
+            winnerPicture.setImageResource(R.drawable.man);
         else
             winnerPicture.setImageResource(R.drawable.woman);
+
 
     }
 }

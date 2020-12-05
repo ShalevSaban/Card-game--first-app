@@ -10,7 +10,7 @@
      android:layout_width="match_parent"
      android:layout_height="wrap_content"
      android:textColor="@color/white"
-     android:textSize="90dp"
+     android:textSize="90sp"
      android:gravity="center"
      android:text="The\n Winner: "
      />
@@ -18,5 +18,5 @@
     android:id="@+id/winner_IMG_picture"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
-     />
+    android:contentDescription="@null" />
 </LinearLayout>
