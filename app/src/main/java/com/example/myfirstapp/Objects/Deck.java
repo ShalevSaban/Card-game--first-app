@@ -1,11 +1,8 @@
-package com.example.myfirstapp;
-
-import android.util.Log;
+package com.example.myfirstapp.Objects;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.List;
 import java.util.Random;
 
 public class Deck {
@@ -42,6 +39,7 @@ public class Deck {
         int cardLocation=random.nextInt(getNumOfCards());
         Card randomCard=new Card(cards.get(cardLocation).getNumber(),cards.get(cardLocation).getShape());
         cards.remove(cardLocation);
+        numOfCards=cards.size();
         return randomCard;
     }
 

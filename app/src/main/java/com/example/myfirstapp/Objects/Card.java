@@ -1,8 +1,8 @@
-package com.example.myfirstapp;
+package com.example.myfirstapp.Objects;
 
 public class Card {
     protected int number;
-    protected  Shape shape;
+    protected Shape shape;
 
     public Card(int number,Shape shape) {
         this.number = number;
