@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Activities.TopTenActivity"
+    android:background="@drawable/menu_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Top 10"
+        android:textColor="@color/white"
+        android:fontFamily="cursive"
+        android:textSize="80dp" />
+
+
+    <ListView
+        android:id="@+id/topTen_LST_listView"
+        style="@style/Widget.AppCompat.Light.ListView.DropDown"
+        android:layout_width="match_parent"
+        android:layout_height="267dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        />
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.example.myfirstapp.Fragments.MapsFragment"
+        android:layout_width="289dp"
+        android:layout_height="182dp"
+        android:layout_gravity="center" />
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/topTen_BTN_menu"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:backgroundTint="@color/white"
+        android:text="Menu"
+        android:textColor="@color/black" />
+
+
+</LinearLayout>
